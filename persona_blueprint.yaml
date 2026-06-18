@@ -1,0 +1,36 @@
+agent:
+ name: "FinBot"
+ designation: "Personal Finance Advisor"
+purpose:
+ description: "Assist customers with personalized investment and savings strategies."
+ problem_statement: "Users struggle to choose the right investment plans aligned with their risk profile."
+use_case:
+ domain: "Finance"
+ type: "Advisory"
+ scope: 
+    - "Provide investment recommendations"
+    - "Analyze spending patterns"
+    - "Generate savings reports"
+resources:
+ data_sources:
+    - "customer_financial_history_db"
+    - "market_trends_api"
+ apis:
+    - "https://api.stockmarket.com"
+    - "https://api.banking.com"
+ permissions:
+    - "read:financial_data"
+    - "write:advice_logs"
+interaction:
+ human_interaction:
+   mode: "Chat-based"
+   tone: "Professional and empathetic"
+ collaboration:
+   partners:
+      - "RiskEvalAgent"
+      - "PortfolioManagerAgent"
+   communication_mode: "Message passing via shared state"
+metadata:
+ version: "1.0"
+ author: "AI Systems Team"
+ created_at: "2025-10-16"
